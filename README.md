@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Application de location de voitures développée avec Next.js.
 
-First, run the development server:
+
+
+ Prérequis
+
+Avant de commencer, assure-toi d’avoir installé :
+
+* Node.js >= 18
+* npm ou yarn
+* Git
+
+---
+
+## 🚀 Installation du projet
+
+### 1. Cloner le projet
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone ...
+cd ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Installer les dépendances
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Configurer les variables d’environnement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+cp .env.example .env
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### 4. Lancer le projet en local
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev ou pnpm dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Accès à l'application
+
+Ouvre ton navigateur :
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🧑‍💻 Workflow de développement
+
+### 🔀 Créer une branche
+
+```bash
+git checkout -b feature/nom-de-la-fonctionnalite
+```
+
+---
+
+## ⚠️ Avant de faire un push (IMPORTANT)
+
+Avant chaque push, tu dois absolument :
+
+### ✅ 1. Vérifier que le projet compile
+
+```bash
+npm run build
+```
+
+---
+
+### ✅ 2. Lancer le linter
+
+```bash
+npm run lint
+```
+
+Corrige toutes les erreurs avant de continuer.
+
+---
+
+### ✅ 3. Tester ton code
+
+* Vérifie que tout fonctionne correctement
+* Pas d’erreurs dans la console navigateur
+
+---
+
+### ✅ 4. Mettre à jour ton code avec la branche principale
+
+```bash
+git pull origin main
+```
+
+Résous les conflits si nécessaire.
+
+---
+
+### ✅ 5. Faire un commit propre
+
+```bash
+git add .
+git commit -m "feat: description claire de la fonctionnalité"
+```
+
+---
+
+## 🚀 Push et Pull Request
+
+```bash
+git push origin feature/nom-de-la-fonctionnalite
+```
+
+Ensuite :
+
+1. Va sur GitHub
+2. Crée une Pull Request vers `main`
+3. Ajoute une description claire
+
+
