@@ -1,0 +1,11 @@
+{
+  "general-errors": {
+    "networkError": "An error occurred. Please check your internet connection."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "cars": "Cars",
+    "contact": "Contact"
+  }
+}

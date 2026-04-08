@@ -1,0 +1,11 @@
+{
+  "general-errors": {
+    "networkError": "Une erreur est survenue. Veuillez vérifier votre connexion internet."
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "cars": "Nos voitures",
+    "contact": "Contact"
+  }
+}
