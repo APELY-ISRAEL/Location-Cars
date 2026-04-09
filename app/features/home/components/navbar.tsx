@@ -25,7 +25,7 @@ const NavbarComponent = () => {
     // Mapping des hrefs vers les IDs de sections
     const sectionMap: { [key: string]: { label: string; icon: JSX.Element } } = {
         "/": { label: "Accueil", icon: <AiOutlineHome /> },
-        "/nos-voitures": { label: "Nos voitures", icon: <AiFillCar /> },
+        "/voiture": { label: "Nos voitures", icon: <AiFillCar /> },
         "/a-propos": { label: "A-propos", icon: <AiOutlineInfoCircle /> },
         "/contact": { label: "Contact", icon: <AiOutlinePhone className="-scale-x-100" /> },
     };
@@ -37,7 +37,7 @@ const NavbarComponent = () => {
             return;
         }
 
-        const sections = ["accueil","nos-voitures","a-propos", "contact",];
+        const sections = ["accueil","voiture","a-propos", "contact",];
         const observers: IntersectionObserver[] = [];
 
         const updateActiveSection = () => {
