@@ -7,5 +7,24 @@
     "about": "About",
     "cars": "Cars",
     "contact": "Contact"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email Address",
+    "password": "Password",
+    "signingIn": "Signing in...",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up",
+    "loginSuccess": "Login Successful",
+    "redirecting": "Redirecting to your dashboard...",
+    "errors": {
+      "invalidEmail": "Invalid email address",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "invalidCredentials": "Invalid credentials",
+      "tryAgain": "Please try again",
+      "networkError": "Network error",
+      "checkConnection": "Please check your connection"
+    }
   }
 }

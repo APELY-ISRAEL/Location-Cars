@@ -5,6 +5,7 @@ import I18nProvider from "./locales/i18nprovider";
 import Navbar from "./features/home/components/navbar";
 import Footer from "./features/home/components/footer";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -34,9 +35,10 @@ export default function RootLayout({
        
       >
         <I18nProvider>
-          <Navbar/>
+         
         {children}
-        <Footer/>
+        <Toaster />
+        
         </I18nProvider>
       </body>
     </html>
