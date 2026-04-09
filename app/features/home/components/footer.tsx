@@ -55,14 +55,14 @@ const Footer = () => {
     };
     return (
         <footer className="bg-slate-100 w-full pt-16 pb-20 relative overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto font-['Inter'] text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto font-['Inter'] text-sm">
                 <div className="space-y-4">
                     <div className="text-xl font-black text-slate-900 ">Cyris Cars</div>
                     <p className="text-slate-500  leading-relaxed">
                         © 2024 Cyris Cars. Cinematic Velocity. L'excellence automobile redéfinie pour vos trajets d'exception.
                     </p>
                 </div>
-                <div>
+                {/* <div>
                     <h5 className="font-bold mb-6 text-slate-900">Liens rapides</h5>
                     <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
                         {Object.entries(sectionMap).map(([path, { label, icon }]) => (
@@ -77,7 +77,7 @@ const Footer = () => {
                             </Link>
                         ))}
                     </ul>
-                </div>
+                </div> */}
                 <div className="space-y-4">
                     <h4 className="font-headline font-bold text-slate-900 uppercase tracking-widest text-xs">Informations</h4>
                     <ul className="space-y-4 text-sm text-slate-500">
