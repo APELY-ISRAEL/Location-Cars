@@ -25,11 +25,11 @@ import {
 
 // ─── Données voitures ────────────────────────────────────────────────────────
 
-type Carburant = "Essence" | "Diesel" | "Électrique" | "Hybride";
-type Transmission = "Manuelle" | "Automatique";
-type Categorie = "Luxe" | "Sport" | "SUV" | "Électrique" | "Cabriolet";
+export type Carburant = "Essence" | "Diesel" | "Électrique" | "Hybride";
+export type Transmission = "Manuelle" | "Automatique";
+export type Categorie = "Luxe" | "Sport" | "SUV" | "Électrique" | "Cabriolet";
 
-interface Voiture {
+export interface Voiture {
     id: number;
     nom: string;
     prix: number;
@@ -41,7 +41,7 @@ interface Voiture {
     image: string;
 }
 
-const VOITURES: Voiture[] = [
+export const VOITURES: Voiture[] = [
     {
         id: 1,
         nom: "Mercedes-Benz Classe G",
