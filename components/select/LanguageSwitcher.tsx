@@ -63,7 +63,7 @@ const LanguageSwitcherContent = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger>
         <BaseButton variantStyle="danger" className="flex items-center rounded-md  ">
           <Globe className="h-4 w-4 text-white " />
           <span className={`hidden sm:inline font-kantumruy-medium text-white hover:text-white `}>{t('home.navbar.language')}</span>
