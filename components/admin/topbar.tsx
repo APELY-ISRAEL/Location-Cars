@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { toast } from "sonner";
 import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import LanguageUrlHandler from "../language/LanguageUrlHandler";
 
@@ -38,23 +39,25 @@ const Topbar = ({ onMenuClick, userName }: TopbarProps) => {
         <>
             <header className="sticky top-0 w-full z-40 flex justify-between items-center px-4 lg:px-12 py-3 bg-white/80 dark:bg-[#0d1c32]/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm">
                 <div className="flex items-center gap-4 lg:gap-0 flex-1 max-w-xl">
-                    <button 
+                    <Button 
+                        variant="ghost" 
+                        size="icon"
                         onClick={onMenuClick}
                         className="lg:hidden p-2 hover:bg-surface-container-low rounded-lg transition-colors"
                     >
                         <Menu className="w-6 h-6 text-slate-600" />
-                    </button>
+                    </Button>
                     <div className="relative w-full">
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4" />
-                        <input className="w-full bg-surface-container-low border-none rounded-full py-2 pl-12 pr-4 text-sm font-inter focus:ring-2 focus:ring-[#feb300] transition-all" placeholder="Search..." type="text" />
+                        <Input className="w-full bg-surface-container-low border-none rounded-full py-2 pl-12 pr-4 text-sm font-inter focus:ring-2 focus:ring-[#feb300] transition-all" placeholder="Search..." type="text" />
                     </div>
                 </div>
 
                 <div className="flex items-center gap-3 lg:gap-6">
                     {/* Utils Group */}
                     <div className="hidden xl:flex items-center gap-2 text-slate-500">
-                        <button className="p-2 hover:text-[#feb300] hover:bg-surface-container-low rounded-lg transition-all duration-200"><Bell className="w-5 h-5" /></button>
-                        <button className="p-2 hover:text-[#feb300] hover:bg-surface-container-low rounded-lg transition-all duration-200"><LanguagesIcon /></button>
+                        <Button variant="ghost" size="icon" className="p-2 hover:text-[#feb300] hover:bg-surface-container-low rounded-lg transition-all duration-200"><Bell className="w-5 h-5" /></Button>
+                        <Button variant="ghost" size="icon" className="p-2 hover:text-[#feb300] hover:bg-surface-container-low rounded-lg transition-all duration-200"><LanguagesIcon /></Button>
                     </div>
 
                     <div className="hidden xl:block h-6 w-[1px] bg-outline-variant/30"></div>

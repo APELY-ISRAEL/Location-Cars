@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface NavigationItem {
@@ -51,12 +52,14 @@ const Sidebar = ({ navigation, userName, sidebarOpen, setSidebarOpen }: SidebarP
                 sidebarOpen ? "translate-x-0" : "-translate-x-full"
             )}>
                 {/* Mobile Close Button */}
-                <button 
+                <Button 
+                    variant="ghost" 
+                    size="icon"
                     onClick={() => setSidebarOpen(false)}
                     className="lg:hidden absolute top-6 right-6 p-2 text-slate-400 hover:text-white hover:bg-white/10 rounded-xl transition-all"
                 >
                     <X className="w-6 h-6" />
-                </button>
+                </Button>
               
                 {/* Brand Logo Section */}
                 <div className="px-8 mb-12">
